@@ -1,0 +1,102 @@
+html{
+    font-size: 62.55%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 400;
+    position: relative;
+    top:5rem;
+    left: 50rem;
+    text-transform: capitalize;
+    border-bottom:2px solid blue ;
+}
+
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+font-family:"poppins" sans-serif;
+font-weight: 600;
+min-height: 100vh;
+background: #00B4DB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin: -7rem;
+}
+nav{
+    background-color:rgba(0, 0, 0, 0.753);
+    width:45%;
+}
+nav  ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+     padding-left:3rem;
+     padding-right: 3rem;
+     cursor: pointer;
+    
+}
+nav ul li{
+    display: inline-block;
+    font-size:2rem;
+    text-transform: uppercase;
+    transform: translateY(-0.8rem);
+    padding: 1rem;
+    display: none;
+    transition: all .2s;
+    color: white;
+}
+nav ul .icons i {
+    display: inline-block;
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    line-height: 2;
+    background-color: #21d190;
+background-image: linear-gradient(315deg, #21d190 0%, #d65bca 74%);
+    -webkit-background-clip: text;
+    color:transparent;
+}
+.icons:hover li{
+display: inline-block;
+}
+@media(max-width:800px){
+    span{
+     position: relative;
+     top: 0;
+     left: 3rem;
+     font-size: 4rem;
+     width: 100%;
+    }
+    .container{
+        height: 100%;
+    }
+    nav{
+        position: absolute;
+        width: 30%;
+        margin-top:10rem;
+
+    }   
+    nav ul{
+            display:block;
+            text-align: center;
+        
+        }
+ nav ul li{
+           display:none;
+       }
+       .icons:hover li{
+        
+           display:block;
+       }
+       
+}
